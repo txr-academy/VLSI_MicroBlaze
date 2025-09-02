@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Aug 26 12:37:45 2025
+# Process ID: 45038
+# Current directory: /home/arjun/Vivado_PROJECTS/project_1_MICROB_CUSTOM_BOOT/project_1_MICROB_CUSTOM_BOOT.runs/design_1_mico_cust_ilmb_v10_0_synth_1
+# Command line: vivado -log design_1_mico_cust_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_mico_cust_ilmb_v10_0.tcl
+# Log file: /home/arjun/Vivado_PROJECTS/project_1_MICROB_CUSTOM_BOOT/project_1_MICROB_CUSTOM_BOOT.runs/design_1_mico_cust_ilmb_v10_0_synth_1/design_1_mico_cust_ilmb_v10_0.vds
+# Journal file: /home/arjun/Vivado_PROJECTS/project_1_MICROB_CUSTOM_BOOT/project_1_MICROB_CUSTOM_BOOT.runs/design_1_mico_cust_ilmb_v10_0_synth_1/vivado.jou
+# Running On: arjun-Aspire-A315-59, OS: Linux, CPU Frequency: 415.471 MHz, CPU Physical cores: 10, Host memory: 7483 MB
+#-----------------------------------------------------------
+source design_1_mico_cust_ilmb_v10_0.tcl -notrace

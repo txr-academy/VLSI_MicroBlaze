@@ -1,0 +1,26 @@
+11:20:00 **** Build of configuration Debug for project gpio_uart_led_switch ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/home/arjun/VITIS_AREA/Microblaize_program_02_09_2025/blaize_platform/export/blaize_platform/sw/blaize_platform/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I/home/arjun/VITIS_AREA/Microblaize_program_02_09_2025/blaize_platform/export/blaize_platform/sw/blaize_platform/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: gpio_uart_led_switch.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/arjun/VITIS_AREA/Microblaize_program_02_09_2025/blaize_platform/export/blaize_platform/sw/blaize_platform/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "gpio_uart_led_switch.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: gpio_uart_led_switch.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size gpio_uart_led_switch.elf  |tee "gpio_uart_led_switch.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9972	    380	   3176	  13528	   34d8	gpio_uart_led_switch.elf
+Finished building: gpio_uart_led_switch.elf.size
+ 
+
+11:21:31 Build Finished (took 1m:31s.122ms)
+

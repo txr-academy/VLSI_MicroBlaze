@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="gpio_uart_led_switch" location="/home/arjun/VITIS_AREA/Microblaize_program_02_09_2025/gpio_uart_led_switch" platform="/home/arjun/VITIS_AREA/Microblaize_program_02_09_2025/blaize_platform/export/blaize_platform/blaize_platform.xpfm" platformUID="xilinx:arty-a7-100::0.0(custom)" systemProject="gpio_uart_led_switch_system" sysConfig="blaize_platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="e7540dc08d34e9b64a2201429a1d1cf4">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1772916730" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.931847047" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

@@ -1,5 +1,4 @@
-##Custom MicroBlaze Peripheral System
-
+Custom MicroBlaze Peripheral System
 
 Hardware Description-
 MicroBlaze Processor Core,
@@ -34,6 +33,7 @@ Demonstrates byte-level read/write operations between FPGA and EEPROM.
 SPI Interface
 Used for future connection with external ADC, DAC, or Flash memory,
 Supports full-duplex serial communication with programmable clock speed.
+
 
 
 

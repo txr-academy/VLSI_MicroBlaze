@@ -1,0 +1,2518 @@
+11:41:16 DEBUG : Logs will be stored at 'C:/Parvathy/vitis_microb_i2c/IDE.log'.
+11:41:22 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Parvathy\vitis_microb_i2c\temp_xsdb_launch_script.tcl
+11:41:22 INFO  : Registering command handlers for Vitis TCF services
+11:41:22 INFO  : Platform repository initialization has completed.
+11:41:25 INFO  : XSCT server has started successfully.
+11:41:25 INFO  : Successfully done setting XSCT server connection channel  
+11:41:25 INFO  : plnx-install-location is set to ''
+11:41:26 INFO  : Successfully done setting workspace for the tool. 
+11:41:26 INFO  : Successfully done query RDI_DATADIR 
+11:43:57 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+11:43:57 INFO  : Result from executing command 'getPlatforms': 
+11:45:06 INFO  : Result from executing command 'removePlatformRepo': 
+11:45:16 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+11:45:16 INFO  : Result from executing command 'getPlatforms': 
+11:45:16 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+12:19:05 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:19:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:19:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:19:11 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:19:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:19:35 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:19:35 INFO  : 'jtag frequency' command is executed.
+12:19:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:19:37 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:19:37 INFO  : Context for processor 'microblaze_0' is selected.
+12:19:37 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:19:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:19:37 INFO  : Context for processor 'microblaze_0' is selected.
+12:19:37 INFO  : System reset is completed.
+12:19:40 INFO  : 'after 3000' command is executed.
+12:19:40 INFO  : Context for processor 'microblaze_0' is selected.
+12:19:40 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:19:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:19:40 INFO  : Context for processor 'microblaze_0' is selected.
+12:19:40 INFO  : 'con' command is executed.
+12:19:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:19:40 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+12:20:13 INFO  : Disconnected from the channel tcfchan#3.
+12:20:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:20:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:20:23 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+12:20:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:20:33 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:20:33 INFO  : 'jtag frequency' command is executed.
+12:20:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:20:35 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:20:35 INFO  : Context for processor 'microblaze_0' is selected.
+12:20:35 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:20:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:20:35 INFO  : Context for processor 'microblaze_0' is selected.
+12:20:35 INFO  : System reset is completed.
+12:20:38 INFO  : 'after 3000' command is executed.
+12:20:38 INFO  : Context for processor 'microblaze_0' is selected.
+12:20:39 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:20:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:20:39 INFO  : Context for processor 'microblaze_0' is selected.
+12:20:39 INFO  : 'con' command is executed.
+12:20:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:20:39 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+12:24:40 INFO  : Result from executing command 'removePlatformRepo': 
+12:24:51 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+12:24:51 INFO  : Result from executing command 'getPlatforms': 
+12:24:51 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+12:25:14 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:25:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:25:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:25:17 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:25:26 INFO  : Disconnected from the channel tcfchan#4.
+12:25:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:25:27 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:25:27 INFO  : 'jtag frequency' command is executed.
+12:25:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:25:29 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:25:30 INFO  : Context for processor 'microblaze_0' is selected.
+12:25:30 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:25:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:25:30 INFO  : Context for processor 'microblaze_0' is selected.
+12:25:30 INFO  : System reset is completed.
+12:25:33 INFO  : 'after 3000' command is executed.
+12:25:33 INFO  : Context for processor 'microblaze_0' is selected.
+12:25:33 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:25:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:25:33 INFO  : Context for processor 'microblaze_0' is selected.
+12:25:33 INFO  : 'con' command is executed.
+12:25:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:25:33 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+12:27:50 INFO  : Result from executing command 'removePlatformRepo': 
+12:28:04 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+12:28:04 INFO  : Result from executing command 'getPlatforms': 
+12:28:04 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+12:29:09 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:29:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:29:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:29:11 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:29:23 INFO  : Disconnected from the channel tcfchan#7.
+12:29:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:29:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:29:33 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+12:29:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:29:42 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:29:42 INFO  : 'jtag frequency' command is executed.
+12:29:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:29:44 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:29:44 INFO  : Context for processor 'microblaze_0' is selected.
+12:29:44 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:29:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:29:44 INFO  : Context for processor 'microblaze_0' is selected.
+12:29:44 INFO  : System reset is completed.
+12:29:47 INFO  : 'after 3000' command is executed.
+12:29:47 INFO  : Context for processor 'microblaze_0' is selected.
+12:29:47 ERROR : Memory write error at 0x0. MicroBlaze is not being clocked
+12:29:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:29:47 ERROR : Memory write error at 0x0. MicroBlaze is not being clocked
+12:30:19 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:30:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:30:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:30:22 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:30:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:30:27 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:30:27 INFO  : 'jtag frequency' command is executed.
+12:30:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:30:29 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:30:30 INFO  : Context for processor 'microblaze_0' is selected.
+12:30:30 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:30:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:30:30 INFO  : Context for processor 'microblaze_0' is selected.
+12:30:30 INFO  : System reset is completed.
+12:30:33 INFO  : 'after 3000' command is executed.
+12:30:33 INFO  : Context for processor 'microblaze_0' is selected.
+12:30:33 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:30:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:30:33 INFO  : Context for processor 'microblaze_0' is selected.
+12:30:33 INFO  : 'con' command is executed.
+12:30:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:30:33 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+12:40:34 INFO  : Result from executing command 'removePlatformRepo': 
+12:40:51 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+12:40:51 INFO  : Result from executing command 'getPlatforms': 
+12:40:51 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+12:41:18 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:41:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:41:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:41:20 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:41:34 INFO  : Disconnected from the channel tcfchan#10.
+12:41:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:41:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:41:44 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+12:41:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:41:49 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:41:49 INFO  : 'jtag frequency' command is executed.
+12:41:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:41:52 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:41:52 INFO  : Context for processor 'microblaze_0' is selected.
+12:41:52 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:41:52 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:41:52 INFO  : Context for processor 'microblaze_0' is selected.
+12:41:52 INFO  : System reset is completed.
+12:41:55 INFO  : 'after 3000' command is executed.
+12:41:55 INFO  : Context for processor 'microblaze_0' is selected.
+12:41:55 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:41:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:41:55 INFO  : Context for processor 'microblaze_0' is selected.
+12:41:55 INFO  : 'con' command is executed.
+12:41:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:41:55 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+12:42:15 INFO  : Disconnected from the channel tcfchan#13.
+12:42:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:42:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:42:26 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+12:43:19 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:43:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:43:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:43:22 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:43:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:43:25 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:43:25 INFO  : 'jtag frequency' command is executed.
+12:43:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:43:27 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:43:27 INFO  : Context for processor 'microblaze_0' is selected.
+12:43:27 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:43:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:43:27 INFO  : Context for processor 'microblaze_0' is selected.
+12:43:27 INFO  : System reset is completed.
+12:43:30 INFO  : 'after 3000' command is executed.
+12:43:30 INFO  : Context for processor 'microblaze_0' is selected.
+12:43:30 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:43:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:43:30 INFO  : Context for processor 'microblaze_0' is selected.
+12:43:30 INFO  : 'con' command is executed.
+12:43:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:43:30 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+12:50:18 INFO  : Result from executing command 'removePlatformRepo': 
+12:50:32 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+12:50:32 INFO  : Result from executing command 'getPlatforms': 
+12:50:32 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+12:50:59 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:50:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:50:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:51:01 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:51:09 INFO  : Disconnected from the channel tcfchan#14.
+12:51:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:51:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:51:19 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+12:51:43 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:51:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:51:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:51:45 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:51:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:51:53 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:51:53 INFO  : 'jtag frequency' command is executed.
+12:51:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:51:56 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:51:56 INFO  : Context for processor 'microblaze_0' is selected.
+12:51:56 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:51:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:51:56 INFO  : Context for processor 'microblaze_0' is selected.
+12:51:56 INFO  : System reset is completed.
+12:51:59 INFO  : 'after 3000' command is executed.
+12:51:59 INFO  : Context for processor 'microblaze_0' is selected.
+12:51:59 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:51:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:51:59 INFO  : Context for processor 'microblaze_0' is selected.
+12:51:59 INFO  : 'con' command is executed.
+12:51:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:51:59 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+12:55:28 INFO  : Result from executing command 'removePlatformRepo': 
+12:55:44 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+12:55:44 INFO  : Result from executing command 'getPlatforms': 
+12:55:44 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+12:56:11 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:56:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:56:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:56:13 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:56:23 INFO  : Disconnected from the channel tcfchan#17.
+12:56:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:56:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:56:33 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+12:57:11 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:57:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:57:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:57:13 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:57:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:57:21 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:57:21 INFO  : 'jtag frequency' command is executed.
+12:57:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:57:23 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:57:23 INFO  : Context for processor 'microblaze_0' is selected.
+12:57:23 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:57:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:57:23 INFO  : Context for processor 'microblaze_0' is selected.
+12:57:23 INFO  : System reset is completed.
+12:57:26 INFO  : 'after 3000' command is executed.
+12:57:26 INFO  : Context for processor 'microblaze_0' is selected.
+12:57:26 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:57:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:57:26 INFO  : Context for processor 'microblaze_0' is selected.
+12:57:26 INFO  : 'con' command is executed.
+12:57:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:57:26 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+12:58:11 INFO  : Disconnected from the channel tcfchan#20.
+12:58:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:58:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:58:21 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+12:58:52 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:58:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:58:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:58:54 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:59:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:59:03 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:59:03 INFO  : 'jtag frequency' command is executed.
+12:59:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:59:05 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:59:05 INFO  : Context for processor 'microblaze_0' is selected.
+12:59:05 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:59:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:59:05 INFO  : Context for processor 'microblaze_0' is selected.
+12:59:05 INFO  : System reset is completed.
+12:59:08 INFO  : 'after 3000' command is executed.
+12:59:08 INFO  : Context for processor 'microblaze_0' is selected.
+12:59:08 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:59:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:59:08 INFO  : Context for processor 'microblaze_0' is selected.
+12:59:08 INFO  : 'con' command is executed.
+12:59:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:59:08 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+13:01:01 INFO  : Result from executing command 'removePlatformRepo': 
+13:01:14 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+13:01:14 INFO  : Result from executing command 'getPlatforms': 
+13:01:14 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+13:01:34 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+13:01:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:01:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:01:36 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+13:01:50 INFO  : Disconnected from the channel tcfchan#21.
+13:01:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:02:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:02:00 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:02:24 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+13:02:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:02:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:02:27 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+13:02:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:02:46 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+13:02:46 INFO  : 'jtag frequency' command is executed.
+13:02:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:02:48 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+13:02:48 INFO  : Context for processor 'microblaze_0' is selected.
+13:02:48 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+13:02:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:02:48 INFO  : Context for processor 'microblaze_0' is selected.
+13:02:48 INFO  : System reset is completed.
+13:02:51 INFO  : 'after 3000' command is executed.
+13:02:51 INFO  : Context for processor 'microblaze_0' is selected.
+13:02:51 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+13:02:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+13:02:51 INFO  : Context for processor 'microblaze_0' is selected.
+13:02:51 INFO  : 'con' command is executed.
+13:02:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:02:51 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+13:13:15 INFO  : Result from executing command 'removePlatformRepo': 
+13:13:33 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+13:13:33 INFO  : Result from executing command 'getPlatforms': 
+13:13:33 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+13:13:58 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+13:13:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:13:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:14:00 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+13:14:08 INFO  : Disconnected from the channel tcfchan#24.
+13:14:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:14:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:14:18 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:14:41 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+13:14:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:14:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:14:43 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+13:14:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:14:52 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+13:14:52 INFO  : 'jtag frequency' command is executed.
+13:14:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:14:54 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+13:14:55 INFO  : Context for processor 'microblaze_0' is selected.
+13:14:55 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+13:14:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:14:55 INFO  : Context for processor 'microblaze_0' is selected.
+13:14:55 INFO  : System reset is completed.
+13:14:58 INFO  : 'after 3000' command is executed.
+13:14:58 INFO  : Context for processor 'microblaze_0' is selected.
+13:14:58 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+13:14:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+13:14:58 INFO  : Context for processor 'microblaze_0' is selected.
+13:14:58 INFO  : 'con' command is executed.
+13:14:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:14:58 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+13:35:44 INFO  : Disconnected from the channel tcfchan#27.
+09:46:47 DEBUG : Logs will be stored at 'C:/Parvathy/vitis_microb_i2c/IDE.log'.
+09:46:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Parvathy\vitis_microb_i2c\temp_xsdb_launch_script.tcl
+09:46:53 INFO  : XSCT server has started successfully.
+09:46:53 INFO  : plnx-install-location is set to ''
+09:46:53 INFO  : Successfully done setting XSCT server connection channel  
+09:46:53 INFO  : Successfully done setting workspace for the tool. 
+09:46:55 INFO  : Platform repository initialization has completed.
+09:46:55 INFO  : Registering command handlers for Vitis TCF services
+09:46:56 INFO  : Successfully done query RDI_DATADIR 
+10:12:46 INFO  : Result from executing command 'removePlatformRepo': 
+10:13:37 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+10:13:50 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+10:13:50 INFO  : Result from executing command 'getPlatforms': 
+10:13:51 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+10:14:18 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+10:14:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:14:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:14:23 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+10:14:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:14:42 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+10:14:42 INFO  : 'jtag frequency' command is executed.
+10:14:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:14:44 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+10:14:44 INFO  : Context for processor 'microblaze_0' is selected.
+10:14:44 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+10:14:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:14:44 INFO  : Context for processor 'microblaze_0' is selected.
+10:14:44 INFO  : System reset is completed.
+10:14:47 INFO  : 'after 3000' command is executed.
+10:14:47 INFO  : Context for processor 'microblaze_0' is selected.
+10:14:47 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+10:14:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+10:14:48 INFO  : Context for processor 'microblaze_0' is selected.
+10:14:48 INFO  : 'con' command is executed.
+10:14:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:14:48 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+10:15:24 INFO  : Disconnected from the channel tcfchan#4.
+10:15:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:15:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:15:34 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:16:25 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+10:16:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:16:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:16:28 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+10:16:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:16:39 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+10:16:39 INFO  : 'jtag frequency' command is executed.
+10:16:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:16:41 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+10:16:42 INFO  : Context for processor 'microblaze_0' is selected.
+10:16:42 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+10:16:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:16:42 INFO  : Context for processor 'microblaze_0' is selected.
+10:16:42 INFO  : System reset is completed.
+10:16:45 INFO  : 'after 3000' command is executed.
+10:16:45 INFO  : Context for processor 'microblaze_0' is selected.
+10:16:45 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+10:16:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+10:16:45 INFO  : Context for processor 'microblaze_0' is selected.
+10:16:45 INFO  : 'con' command is executed.
+10:16:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:16:45 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+10:29:26 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+10:29:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:29:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:29:28 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+10:37:48 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+10:37:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:37:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:37:50 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+10:49:34 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+10:49:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:49:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:49:37 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+10:50:01 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+10:50:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:50:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:50:03 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+10:50:37 INFO  : Result from executing command 'removePlatformRepo': 
+10:50:50 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+10:50:50 INFO  : Result from executing command 'getPlatforms': 
+10:50:50 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+10:51:19 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+10:51:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:51:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:51:21 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+10:51:28 INFO  : Disconnected from the channel tcfchan#5.
+10:51:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:51:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:51:38 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:52:24 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+10:52:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:52:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:52:26 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+10:52:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:52:33 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+10:52:33 INFO  : 'jtag frequency' command is executed.
+10:52:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:52:35 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+10:52:35 INFO  : Context for processor 'microblaze_0' is selected.
+10:52:35 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+10:52:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:52:35 INFO  : Context for processor 'microblaze_0' is selected.
+10:52:35 INFO  : System reset is completed.
+10:52:38 INFO  : 'after 3000' command is executed.
+10:52:38 INFO  : Context for processor 'microblaze_0' is selected.
+10:52:38 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+10:52:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+10:52:39 INFO  : Context for processor 'microblaze_0' is selected.
+10:52:39 INFO  : 'con' command is executed.
+10:52:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:52:39 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+10:54:25 INFO  : Result from executing command 'removePlatformRepo': 
+10:54:39 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+10:54:39 INFO  : Result from executing command 'getPlatforms': 
+10:54:39 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+10:55:13 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+10:55:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:55:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:55:15 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+10:55:27 INFO  : Disconnected from the channel tcfchan#8.
+10:55:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:55:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:55:37 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:56:00 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+10:56:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:56:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:56:03 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+10:56:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:56:08 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+10:56:08 INFO  : 'jtag frequency' command is executed.
+10:56:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:56:10 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+10:56:10 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:10 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+10:56:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:56:11 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:11 INFO  : System reset is completed.
+10:56:14 INFO  : 'after 3000' command is executed.
+10:56:14 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:14 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+10:56:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+10:56:14 INFO  : Context for processor 'microblaze_0' is selected.
+10:56:14 INFO  : 'con' command is executed.
+10:56:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:56:14 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+11:00:39 INFO  : Result from executing command 'removePlatformRepo': 
+11:00:53 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+11:00:53 INFO  : Result from executing command 'getPlatforms': 
+11:00:53 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+11:01:18 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+11:01:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:01:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:01:20 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+11:01:32 INFO  : Disconnected from the channel tcfchan#11.
+11:01:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:01:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+11:01:42 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+11:02:10 INFO  : Result from executing command 'removePlatformRepo': 
+11:02:25 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+11:02:25 INFO  : Result from executing command 'getPlatforms': 
+11:02:25 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+11:02:43 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+11:02:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:02:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:02:45 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+11:02:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:02:52 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+11:02:52 INFO  : 'jtag frequency' command is executed.
+11:02:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:02:54 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+11:02:54 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:54 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+11:02:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:02:54 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:54 INFO  : System reset is completed.
+11:02:57 INFO  : 'after 3000' command is executed.
+11:02:57 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:57 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+11:02:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+11:02:57 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:57 INFO  : 'con' command is executed.
+11:02:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:02:57 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+11:18:49 INFO  : Result from executing command 'removePlatformRepo': 
+11:20:27 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+11:20:27 INFO  : Result from executing command 'getPlatforms': 
+11:20:27 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+11:20:51 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+11:20:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:20:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:20:53 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+11:21:21 INFO  : Result from executing command 'removePlatformRepo': 
+11:21:52 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+11:21:52 INFO  : Result from executing command 'getPlatforms': 
+11:21:52 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+11:22:11 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+11:22:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:22:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:22:13 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+11:22:43 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+11:22:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:22:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:22:45 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+11:22:52 INFO  : Disconnected from the channel tcfchan#14.
+11:22:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:23:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+11:23:02 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+11:23:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:23:02 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+11:23:02 INFO  : 'jtag frequency' command is executed.
+11:23:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:23:04 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+11:23:04 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:04 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+11:23:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:23:04 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:04 INFO  : System reset is completed.
+11:23:07 INFO  : 'after 3000' command is executed.
+11:23:07 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:07 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+11:23:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+11:23:07 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:07 INFO  : 'con' command is executed.
+11:23:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:23:07 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\systemdebugger_iic_microblaze_system_standalone.tcl'
+11:23:15 INFO  : Disconnected from the channel tcfchan#21.
+11:23:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:23:15 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+11:23:15 INFO  : 'jtag frequency' command is executed.
+11:23:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:23:17 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+11:23:17 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:17 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+11:23:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:23:17 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:17 INFO  : System reset is completed.
+11:23:20 INFO  : 'after 3000' command is executed.
+11:23:20 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:21 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+11:23:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+11:23:21 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:21 INFO  : 'con' command is executed.
+11:23:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:23:21 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\systemdebugger_iic_microblaze_system_standalone.tcl'
+11:24:06 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+11:24:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:24:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:24:09 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+11:24:13 INFO  : Disconnected from the channel tcfchan#22.
+11:24:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:24:14 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+11:24:14 INFO  : 'jtag frequency' command is executed.
+11:24:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:24:16 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+11:24:16 INFO  : Context for processor 'microblaze_0' is selected.
+11:24:16 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+11:24:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:24:16 INFO  : Context for processor 'microblaze_0' is selected.
+11:24:16 INFO  : System reset is completed.
+11:24:19 INFO  : 'after 3000' command is executed.
+11:24:19 INFO  : Context for processor 'microblaze_0' is selected.
+11:24:19 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+11:24:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+11:24:19 INFO  : Context for processor 'microblaze_0' is selected.
+11:24:19 INFO  : 'con' command is executed.
+11:24:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:24:19 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\systemdebugger_iic_microblaze_system_standalone.tcl'
+11:26:38 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+11:26:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:26:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:26:40 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+11:26:51 INFO  : Disconnected from the channel tcfchan#23.
+11:26:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:26:51 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+11:26:51 INFO  : 'jtag frequency' command is executed.
+11:26:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:26:53 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+11:26:54 INFO  : Context for processor 'microblaze_0' is selected.
+11:26:54 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+11:26:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:26:54 INFO  : Context for processor 'microblaze_0' is selected.
+11:26:54 INFO  : System reset is completed.
+11:26:57 INFO  : 'after 3000' command is executed.
+11:26:57 INFO  : Context for processor 'microblaze_0' is selected.
+11:26:57 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+11:26:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+11:26:57 INFO  : Context for processor 'microblaze_0' is selected.
+11:26:57 INFO  : 'con' command is executed.
+11:26:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:26:57 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\systemdebugger_iic_microblaze_system_standalone.tcl'
+12:14:53 INFO  : Result from executing command 'removePlatformRepo': 
+12:15:10 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+12:15:11 INFO  : Result from executing command 'getPlatforms': 
+12:15:11 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+12:15:26 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:15:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:15:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:15:28 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:15:42 INFO  : Disconnected from the channel tcfchan#24.
+12:15:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:15:42 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:15:42 INFO  : 'jtag frequency' command is executed.
+12:15:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:15:44 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:15:44 INFO  : Context for processor 'microblaze_0' is selected.
+12:15:44 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:15:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:15:44 INFO  : Context for processor 'microblaze_0' is selected.
+12:15:44 INFO  : System reset is completed.
+12:15:47 INFO  : 'after 3000' command is executed.
+12:15:47 INFO  : Context for processor 'microblaze_0' is selected.
+12:15:47 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:15:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:15:48 INFO  : Context for processor 'microblaze_0' is selected.
+12:15:48 INFO  : 'con' command is executed.
+12:15:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:15:48 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\systemdebugger_iic_microblaze_system_standalone.tcl'
+12:19:11 INFO  : Result from executing command 'removePlatformRepo': 
+12:19:23 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+12:19:23 INFO  : Result from executing command 'getPlatforms': 
+12:19:24 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+12:19:54 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:19:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:19:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:19:57 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:20:06 INFO  : Disconnected from the channel tcfchan#27.
+12:20:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:20:07 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:20:07 INFO  : 'jtag frequency' command is executed.
+12:20:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:20:09 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:20:09 INFO  : Context for processor 'microblaze_0' is selected.
+12:20:09 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:20:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:20:09 INFO  : Context for processor 'microblaze_0' is selected.
+12:20:09 INFO  : System reset is completed.
+12:20:12 INFO  : 'after 3000' command is executed.
+12:20:12 INFO  : Context for processor 'microblaze_0' is selected.
+12:20:12 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:20:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:20:12 INFO  : Context for processor 'microblaze_0' is selected.
+12:20:12 INFO  : 'con' command is executed.
+12:20:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:20:12 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+12:23:40 INFO  : Result from executing command 'removePlatformRepo': 
+12:23:50 INFO  : Result from executing command 'getProjects': IIC_SYSTEM
+12:23:50 INFO  : Result from executing command 'getPlatforms': 
+12:23:51 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+12:24:14 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:24:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:24:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:24:16 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:24:52 INFO  : Disconnected from the channel tcfchan#30.
+12:24:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:25:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:25:02 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+12:25:38 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:25:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:25:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:25:40 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:26:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:26:01 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:26:01 INFO  : 'jtag frequency' command is executed.
+12:26:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:26:03 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:26:03 INFO  : Context for processor 'microblaze_0' is selected.
+12:26:03 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:26:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:26:03 INFO  : Context for processor 'microblaze_0' is selected.
+12:26:03 INFO  : System reset is completed.
+12:26:06 INFO  : 'after 3000' command is executed.
+12:26:06 INFO  : Context for processor 'microblaze_0' is selected.
+12:26:06 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:26:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:26:06 INFO  : Context for processor 'microblaze_0' is selected.
+12:26:06 INFO  : 'con' command is executed.
+12:26:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:26:06 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\systemdebugger_iic_microblaze_system_standalone.tcl'
+12:27:18 INFO  : Checking for BSP changes to sync application flags for project 'IIC_MICROBLAZE'...
+12:27:48 INFO  : Disconnected from the channel tcfchan#33.
+12:27:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:27:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:27:58 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+12:28:26 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:28:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:28:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:28:28 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:29:24 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:29:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:29:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:29:26 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:29:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:29:34 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:29:34 INFO  : 'jtag frequency' command is executed.
+12:29:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:29:36 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:29:36 INFO  : Context for processor 'microblaze_0' is selected.
+12:29:36 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:29:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:29:36 INFO  : Context for processor 'microblaze_0' is selected.
+12:29:36 INFO  : System reset is completed.
+12:29:39 INFO  : 'after 3000' command is executed.
+12:29:39 INFO  : Context for processor 'microblaze_0' is selected.
+12:29:39 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:29:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:29:39 INFO  : Context for processor 'microblaze_0' is selected.
+12:29:39 INFO  : 'con' command is executed.
+12:29:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:29:39 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\debugger_iic_microblaze-default.tcl'
+12:33:39 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:33:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:33:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:33:41 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:34:01 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:34:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:34:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:34:04 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:34:13 INFO  : Disconnected from the channel tcfchan#34.
+12:34:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:34:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:34:23 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+12:34:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:34:36 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:34:36 INFO  : 'jtag frequency' command is executed.
+12:34:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:34:38 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:34:38 INFO  : Context for processor 'microblaze_0' is selected.
+12:34:38 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:34:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:34:38 INFO  : Context for processor 'microblaze_0' is selected.
+12:34:38 INFO  : System reset is completed.
+12:34:41 INFO  : 'after 3000' command is executed.
+12:34:41 INFO  : Context for processor 'microblaze_0' is selected.
+12:34:41 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:34:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:34:41 INFO  : Context for processor 'microblaze_0' is selected.
+12:34:41 INFO  : 'con' command is executed.
+12:34:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:34:41 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\systemdebugger_iic_microblaze_system_standalone.tcl'
+12:36:19 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:36:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:36:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:36:22 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:37:11 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:37:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:37:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:37:13 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:38:24 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:38:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:38:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:38:26 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:39:33 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:40:14 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:40:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:40:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:40:16 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:40:19 INFO  : Disconnected from the channel tcfchan#35.
+12:40:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:40:20 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:40:20 INFO  : 'jtag frequency' command is executed.
+12:40:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:40:22 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:40:22 INFO  : Context for processor 'microblaze_0' is selected.
+12:40:22 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:40:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:40:22 INFO  : Context for processor 'microblaze_0' is selected.
+12:40:22 INFO  : System reset is completed.
+12:40:25 INFO  : 'after 3000' command is executed.
+12:40:25 INFO  : Context for processor 'microblaze_0' is selected.
+12:40:25 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:40:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:40:25 INFO  : Context for processor 'microblaze_0' is selected.
+12:40:25 INFO  : 'con' command is executed.
+12:40:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:40:25 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\systemdebugger_iic_microblaze_system_standalone.tcl'
+12:44:56 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:44:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:44:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:44:58 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:45:55 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit' is generated.
+12:45:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:45:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:45:57 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:46:04 INFO  : Disconnected from the channel tcfchan#36.
+12:46:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:04 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:46:04 INFO  : 'jtag frequency' command is executed.
+12:46:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:46:07 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit"
+12:46:07 INFO  : Context for processor 'microblaze_0' is selected.
+12:46:07 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa'.
+12:46:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:46:07 INFO  : Context for processor 'microblaze_0' is selected.
+12:46:07 INFO  : System reset is completed.
+12:46:10 INFO  : 'after 3000' command is executed.
+12:46:10 INFO  : Context for processor 'microblaze_0' is selected.
+12:46:10 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf' is downloaded to processor 'microblaze_0'.
+12:46:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/IIC_MICROBLAZE/Debug/IIC_MICROBLAZE.elf
+----------------End of Script----------------
+
+12:46:10 INFO  : Context for processor 'microblaze_0' is selected.
+12:46:10 INFO  : 'con' command is executed.
+12:46:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:46:10 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\IIC_MICROBLAZE_system\_ide\scripts\systemdebugger_iic_microblaze_system_standalone.tcl'
+13:00:58 WARN  : An unexpected exception occurred in the module 'platform project logging'
+13:02:47 INFO  : Result from executing command 'getProjects': IIC_eeprom
+13:02:47 INFO  : Result from executing command 'getPlatforms': 
+13:03:01 INFO  : Result from executing command 'removePlatformRepo': 
+13:03:13 INFO  : Result from executing command 'getProjects': IIC_eeprom
+13:03:13 INFO  : Result from executing command 'getPlatforms': 
+13:05:01 INFO  : Checking for BSP changes to sync application flags for project 'iic_mb'...
+13:05:23 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+13:05:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:05:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:05:26 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+13:05:57 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+13:05:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:05:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:05:59 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+13:06:05 INFO  : Disconnected from the channel tcfchan#37.
+13:06:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:06:06 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+13:06:06 INFO  : 'jtag frequency' command is executed.
+13:06:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:06:08 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+13:06:08 INFO  : Context for processor 'microblaze_0' is selected.
+13:06:08 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+13:06:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:06:08 INFO  : Context for processor 'microblaze_0' is selected.
+13:06:08 INFO  : System reset is completed.
+13:06:11 INFO  : 'after 3000' command is executed.
+13:06:11 INFO  : Context for processor 'microblaze_0' is selected.
+13:06:11 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+13:06:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+13:06:11 INFO  : Context for processor 'microblaze_0' is selected.
+13:06:11 INFO  : 'con' command is executed.
+13:06:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:06:11 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\systemdebugger_iic_mb_system_standalone.tcl'
+13:08:55 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+13:08:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:08:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:08:57 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+13:09:41 INFO  : Result from executing command 'removePlatformRepo': 
+13:09:54 INFO  : Result from executing command 'getProjects': IIC_eeprom
+13:09:54 INFO  : Result from executing command 'getPlatforms': 
+13:09:54 INFO  : Checking for BSP changes to sync application flags for project 'iic_mb'...
+13:10:15 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+13:10:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:10:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:10:18 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+13:11:08 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+13:11:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:11:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:11:10 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+13:11:17 INFO  : Disconnected from the channel tcfchan#40.
+13:11:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:11:17 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+13:11:17 INFO  : 'jtag frequency' command is executed.
+13:11:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:11:19 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+13:11:19 INFO  : Context for processor 'microblaze_0' is selected.
+13:11:19 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+13:11:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:11:19 INFO  : Context for processor 'microblaze_0' is selected.
+13:11:19 INFO  : System reset is completed.
+13:11:22 INFO  : 'after 3000' command is executed.
+13:11:22 INFO  : Context for processor 'microblaze_0' is selected.
+13:11:22 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+13:11:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+13:11:22 INFO  : Context for processor 'microblaze_0' is selected.
+13:11:22 INFO  : 'con' command is executed.
+13:11:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:11:22 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\systemdebugger_iic_mb_system_standalone.tcl'
+13:16:04 INFO  : Result from executing command 'removePlatformRepo': 
+13:16:17 INFO  : Result from executing command 'getProjects': IIC_eeprom
+13:16:17 INFO  : Result from executing command 'getPlatforms': 
+13:16:17 INFO  : Checking for BSP changes to sync application flags for project 'iic_mb'...
+13:16:37 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+13:16:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:16:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:16:40 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+13:17:06 INFO  : Disconnected from the channel tcfchan#43.
+13:17:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:17:07 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+13:17:07 INFO  : 'jtag frequency' command is executed.
+13:17:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:17:09 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+13:17:09 INFO  : Context for processor 'microblaze_0' is selected.
+13:17:09 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+13:17:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:17:09 INFO  : Context for processor 'microblaze_0' is selected.
+13:17:09 INFO  : System reset is completed.
+13:17:12 INFO  : 'after 3000' command is executed.
+13:17:12 INFO  : Context for processor 'microblaze_0' is selected.
+13:17:12 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+13:17:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+13:17:12 INFO  : Context for processor 'microblaze_0' is selected.
+13:17:12 INFO  : 'con' command is executed.
+13:17:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:17:12 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+13:17:40 INFO  : Checking for BSP changes to sync application flags for project 'iic_mb'...
+13:18:01 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+13:18:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:18:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:18:03 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+13:18:10 INFO  : Disconnected from the channel tcfchan#46.
+13:18:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:18:11 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+13:18:11 INFO  : 'jtag frequency' command is executed.
+13:18:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:18:13 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+13:18:13 INFO  : Context for processor 'microblaze_0' is selected.
+13:18:13 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+13:18:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:18:13 INFO  : Context for processor 'microblaze_0' is selected.
+13:18:13 INFO  : System reset is completed.
+13:18:16 INFO  : 'after 3000' command is executed.
+13:18:16 INFO  : Context for processor 'microblaze_0' is selected.
+13:18:17 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+13:18:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+13:18:17 INFO  : Context for processor 'microblaze_0' is selected.
+13:18:17 INFO  : 'con' command is executed.
+13:18:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:18:17 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+13:22:36 INFO  : Result from executing command 'removePlatformRepo': 
+13:22:47 INFO  : Result from executing command 'getProjects': IIC_eeprom
+13:22:47 INFO  : Result from executing command 'getPlatforms': 
+13:22:47 INFO  : Checking for BSP changes to sync application flags for project 'iic_mb'...
+13:23:07 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+13:26:04 INFO  : Result from executing command 'removePlatformRepo': 
+13:26:18 INFO  : Result from executing command 'getProjects': IIC_eeprom
+13:26:18 INFO  : Result from executing command 'getPlatforms': 
+13:26:19 INFO  : Checking for BSP changes to sync application flags for project 'iic_mb'...
+13:26:40 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+13:26:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:26:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:26:43 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+13:26:52 INFO  : Disconnected from the channel tcfchan#47.
+13:26:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:27:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:27:02 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:27:27 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+13:27:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:27:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:27:29 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+13:27:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:27:38 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+13:27:38 INFO  : 'jtag frequency' command is executed.
+13:27:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+13:27:41 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+13:27:41 INFO  : Context for processor 'microblaze_0' is selected.
+13:27:41 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+13:27:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:27:41 INFO  : Context for processor 'microblaze_0' is selected.
+13:27:41 INFO  : System reset is completed.
+13:27:44 INFO  : 'after 3000' command is executed.
+13:27:44 INFO  : Context for processor 'microblaze_0' is selected.
+13:27:44 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+13:27:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+13:27:44 INFO  : Context for processor 'microblaze_0' is selected.
+13:27:44 INFO  : 'con' command is executed.
+13:27:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:27:44 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+13:28:18 INFO  : Disconnected from the channel tcfchan#52.
+09:50:26 DEBUG : Logs will be stored at 'C:/Parvathy/vitis_microb_i2c/IDE.log'.
+09:50:27 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Parvathy\vitis_microb_i2c\temp_xsdb_launch_script.tcl
+09:50:32 INFO  : XSCT server has started successfully.
+09:50:32 INFO  : plnx-install-location is set to ''
+09:50:32 INFO  : Successfully done setting XSCT server connection channel  
+09:50:32 INFO  : Successfully done setting workspace for the tool. 
+09:50:34 INFO  : Platform repository initialization has completed.
+09:50:34 INFO  : Registering command handlers for Vitis TCF services
+09:50:35 INFO  : Successfully done query RDI_DATADIR 
+10:03:14 INFO  : Result from executing command 'removePlatformRepo': 
+10:04:40 INFO  : Result from executing command 'getProjects': IIC_eeprom
+10:04:40 INFO  : Result from executing command 'getPlatforms': 
+10:06:21 INFO  : Result from executing command 'removePlatformRepo': 
+10:06:36 INFO  : Result from executing command 'getProjects': IIC_eeprom
+10:06:36 INFO  : Result from executing command 'getPlatforms': 
+10:06:37 INFO  : Checking for BSP changes to sync application flags for project 'iic_mb'...
+10:07:11 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+10:07:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:07:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:07:16 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:07:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:07:26 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+10:07:26 INFO  : 'jtag frequency' command is executed.
+10:07:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:07:28 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:07:28 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:28 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+10:07:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:07:28 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:28 INFO  : System reset is completed.
+10:07:31 INFO  : 'after 3000' command is executed.
+10:07:31 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:31 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+10:07:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+10:07:31 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:31 INFO  : 'con' command is executed.
+10:07:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:07:31 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+10:25:23 INFO  : Result from executing command 'removePlatformRepo': 
+10:25:34 INFO  : Result from executing command 'getProjects': IIC_eeprom
+10:25:34 INFO  : Result from executing command 'getPlatforms': 
+10:25:34 INFO  : Checking for BSP changes to sync application flags for project 'iic_mb'...
+10:26:04 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+10:26:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:26:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:26:06 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:26:24 INFO  : Disconnected from the channel tcfchan#5.
+10:26:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:26:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:26:34 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:27:06 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+10:27:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:27:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:27:08 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:27:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:27:21 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+10:27:21 INFO  : 'jtag frequency' command is executed.
+10:27:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:27:23 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:27:24 INFO  : Context for processor 'microblaze_0' is selected.
+10:27:24 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+10:27:24 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:27:24 INFO  : Context for processor 'microblaze_0' is selected.
+10:27:24 INFO  : System reset is completed.
+10:27:27 INFO  : 'after 3000' command is executed.
+10:27:27 INFO  : Context for processor 'microblaze_0' is selected.
+10:27:27 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+10:27:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+10:27:27 INFO  : Context for processor 'microblaze_0' is selected.
+10:27:27 INFO  : 'con' command is executed.
+10:27:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:27:27 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+10:31:54 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+10:31:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:31:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:31:57 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:32:07 INFO  : Result from executing command 'removePlatformRepo': 
+10:32:20 INFO  : Result from executing command 'getProjects': IIC_eeprom
+10:32:20 INFO  : Result from executing command 'getPlatforms': 
+10:32:20 INFO  : Checking for BSP changes to sync application flags for project 'iic_mb'...
+10:32:43 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+10:32:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:32:45 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:32:57 INFO  : Disconnected from the channel tcfchan#8.
+10:32:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:33:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:33:07 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:33:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:33:12 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+10:33:12 INFO  : 'jtag frequency' command is executed.
+10:33:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:33:14 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:33:14 INFO  : Context for processor 'microblaze_0' is selected.
+10:33:14 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+10:33:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:33:14 INFO  : Context for processor 'microblaze_0' is selected.
+10:33:14 INFO  : System reset is completed.
+10:33:17 INFO  : 'after 3000' command is executed.
+10:33:17 INFO  : Context for processor 'microblaze_0' is selected.
+10:33:18 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+10:33:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+10:33:18 INFO  : Context for processor 'microblaze_0' is selected.
+10:33:18 INFO  : 'con' command is executed.
+10:33:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:33:18 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+10:37:56 INFO  : Result from executing command 'removePlatformRepo': 
+10:38:08 INFO  : Result from executing command 'getProjects': IIC_eeprom
+10:38:08 INFO  : Result from executing command 'getPlatforms': 
+10:38:08 INFO  : Checking for BSP changes to sync application flags for project 'iic_mb'...
+10:38:34 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+10:38:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:38:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:38:36 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:38:51 INFO  : Disconnected from the channel tcfchan#11.
+10:38:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:39:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:39:01 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:39:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:39:06 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+10:39:06 INFO  : 'jtag frequency' command is executed.
+10:39:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:39:09 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:39:09 INFO  : Context for processor 'microblaze_0' is selected.
+10:39:09 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+10:39:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:39:09 INFO  : Context for processor 'microblaze_0' is selected.
+10:39:09 INFO  : System reset is completed.
+10:39:12 INFO  : 'after 3000' command is executed.
+10:39:12 INFO  : Context for processor 'microblaze_0' is selected.
+10:39:12 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+10:39:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+10:39:12 INFO  : Context for processor 'microblaze_0' is selected.
+10:39:12 INFO  : 'con' command is executed.
+10:39:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:39:12 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+10:39:26 INFO  : Disconnected from the channel tcfchan#14.
+10:39:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:39:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:39:36 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:39:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:39:44 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+10:39:44 INFO  : 'jtag frequency' command is executed.
+10:39:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:39:47 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:39:47 INFO  : Context for processor 'microblaze_0' is selected.
+10:39:47 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+10:39:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:39:47 INFO  : Context for processor 'microblaze_0' is selected.
+10:39:47 INFO  : System reset is completed.
+10:39:50 INFO  : 'after 3000' command is executed.
+10:39:50 INFO  : Context for processor 'microblaze_0' is selected.
+10:39:50 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+10:39:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+10:39:50 INFO  : Context for processor 'microblaze_0' is selected.
+10:39:50 INFO  : 'con' command is executed.
+10:39:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:39:50 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+10:44:21 INFO  : Result from executing command 'removePlatformRepo': 
+10:44:36 INFO  : Result from executing command 'getProjects': IIC_eeprom
+10:44:36 INFO  : Result from executing command 'getPlatforms': 
+10:44:36 INFO  : Checking for BSP changes to sync application flags for project 'iic_mb'...
+10:45:54 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+10:45:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:45:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:45:56 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:46:12 INFO  : Disconnected from the channel tcfchan#15.
+10:46:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:46:22 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:46:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:43 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+10:46:43 INFO  : 'jtag frequency' command is executed.
+10:46:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:46:45 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:46:45 INFO  : Context for processor 'microblaze_0' is selected.
+10:46:45 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+10:46:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:46:45 INFO  : Context for processor 'microblaze_0' is selected.
+10:46:45 INFO  : System reset is completed.
+10:46:48 INFO  : 'after 3000' command is executed.
+10:46:48 INFO  : Context for processor 'microblaze_0' is selected.
+10:46:48 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+10:46:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+10:46:48 INFO  : Context for processor 'microblaze_0' is selected.
+10:46:48 INFO  : 'con' command is executed.
+10:46:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:46:48 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+10:49:27 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+10:49:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:49:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:49:30 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:49:48 INFO  : Disconnected from the channel tcfchan#18.
+10:49:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:49:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:49:58 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:50:10 INFO  : Checking for BSP changes to sync application flags for project 'iic_mb'...
+10:50:38 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+10:50:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:50:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:50:40 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:50:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:50:46 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+10:50:46 INFO  : 'jtag frequency' command is executed.
+10:50:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+10:50:48 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+10:50:49 INFO  : Context for processor 'microblaze_0' is selected.
+10:50:49 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+10:50:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:50:49 INFO  : Context for processor 'microblaze_0' is selected.
+10:50:49 INFO  : System reset is completed.
+10:50:52 INFO  : 'after 3000' command is executed.
+10:50:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:50:52 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+10:50:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+10:50:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:50:52 INFO  : 'con' command is executed.
+10:50:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:50:52 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+11:15:15 INFO  : Disconnected from the channel tcfchan#19.
+11:20:36 DEBUG : Logs will be stored at 'C:/Parvathy/vitis_microb_i2c/IDE.log'.
+11:20:37 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Parvathy\vitis_microb_i2c\temp_xsdb_launch_script.tcl
+11:20:41 INFO  : XSCT server has started successfully.
+11:20:41 INFO  : plnx-install-location is set to ''
+11:20:41 INFO  : Successfully done setting XSCT server connection channel  
+11:20:41 INFO  : Successfully done setting workspace for the tool. 
+11:20:43 INFO  : Platform repository initialization has completed.
+11:20:43 INFO  : Registering command handlers for Vitis TCF services
+11:20:44 INFO  : Successfully done query RDI_DATADIR 
+11:20:59 INFO  : Result from executing command 'removePlatformRepo': 
+11:21:14 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+11:21:30 INFO  : Result from executing command 'getProjects': IIC_eeprom
+11:21:30 INFO  : Result from executing command 'getPlatforms': 
+11:21:30 INFO  : Checking for BSP changes to sync application flags for project 'iic_mb'...
+11:21:55 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+11:21:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:21:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:22:01 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+11:22:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:22:09 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+11:22:09 INFO  : 'jtag frequency' command is executed.
+11:22:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:22:12 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+11:22:12 INFO  : Context for processor 'microblaze_0' is selected.
+11:22:12 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+11:22:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:22:12 INFO  : Context for processor 'microblaze_0' is selected.
+11:22:12 INFO  : System reset is completed.
+11:22:15 INFO  : 'after 3000' command is executed.
+11:22:15 INFO  : Context for processor 'microblaze_0' is selected.
+11:22:15 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+11:22:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+11:22:15 INFO  : Context for processor 'microblaze_0' is selected.
+11:22:15 INFO  : 'con' command is executed.
+11:22:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:22:15 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+11:22:44 INFO  : Disconnected from the channel tcfchan#4.
+11:22:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:22:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+11:22:54 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+11:23:18 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+11:23:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:23:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:23:20 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+11:23:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:23:38 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+11:23:38 INFO  : 'jtag frequency' command is executed.
+11:23:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+11:23:40 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+11:23:40 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:40 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+11:23:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:23:40 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:40 INFO  : System reset is completed.
+11:23:43 INFO  : 'after 3000' command is executed.
+11:23:43 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:43 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+11:23:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+11:23:43 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:43 INFO  : 'con' command is executed.
+11:23:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:23:43 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+12:02:32 INFO  : Disconnected from the channel tcfchan#5.
+12:02:56 DEBUG : Logs will be stored at 'C:/Parvathy/vitis_microb_i2c/IDE.log'.
+12:02:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Parvathy\vitis_microb_i2c\temp_xsdb_launch_script.tcl
+12:03:01 INFO  : XSCT server has started successfully.
+12:03:01 INFO  : plnx-install-location is set to ''
+12:03:01 INFO  : Successfully done setting XSCT server connection channel  
+12:03:01 INFO  : Successfully done setting workspace for the tool. 
+12:03:02 INFO  : Platform repository initialization has completed.
+12:03:02 INFO  : Registering command handlers for Vitis TCF services
+12:03:02 INFO  : Successfully done query RDI_DATADIR 
+12:04:52 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+12:04:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:04:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:04:54 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+12:05:45 INFO  : Checking for BSP changes to sync application flags for project 'iic_mb'...
+12:06:07 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+12:06:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:06:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:06:09 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+12:06:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:06:24 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:06:25 INFO  : 'jtag frequency' command is executed.
+12:06:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:06:27 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+12:06:27 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:27 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+12:06:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:06:27 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:27 INFO  : System reset is completed.
+12:06:30 INFO  : 'after 3000' command is executed.
+12:06:30 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:30 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+12:06:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+12:06:30 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:30 INFO  : 'con' command is executed.
+12:06:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:06:30 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+12:07:31 INFO  : Disconnected from the channel tcfchan#1.
+12:07:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:07:32 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:07:32 INFO  : 'jtag frequency' command is executed.
+12:07:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:07:34 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+12:07:34 INFO  : Context for processor 'microblaze_0' is selected.
+12:07:35 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+12:07:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:07:35 INFO  : Context for processor 'microblaze_0' is selected.
+12:07:35 INFO  : System reset is completed.
+12:07:38 INFO  : 'after 3000' command is executed.
+12:07:38 INFO  : Context for processor 'microblaze_0' is selected.
+12:07:38 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+12:07:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+12:07:38 INFO  : Context for processor 'microblaze_0' is selected.
+12:07:38 INFO  : 'con' command is executed.
+12:07:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:07:38 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+12:08:23 INFO  : Disconnected from the channel tcfchan#2.
+12:08:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:08:24 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:08:24 INFO  : 'jtag frequency' command is executed.
+12:08:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:08:26 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+12:08:26 INFO  : Context for processor 'microblaze_0' is selected.
+12:08:26 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+12:08:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:08:26 INFO  : Context for processor 'microblaze_0' is selected.
+12:08:26 INFO  : System reset is completed.
+12:08:29 INFO  : 'after 3000' command is executed.
+12:08:29 INFO  : Context for processor 'microblaze_0' is selected.
+12:08:29 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+12:08:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+12:08:30 INFO  : Context for processor 'microblaze_0' is selected.
+12:08:30 INFO  : 'con' command is executed.
+12:08:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:08:30 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+12:09:33 INFO  : Disconnected from the channel tcfchan#3.
+12:09:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:09:35 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:09:35 INFO  : 'jtag frequency' command is executed.
+12:09:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:09:37 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+12:09:37 INFO  : Context for processor 'microblaze_0' is selected.
+12:09:37 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+12:09:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:09:37 INFO  : Context for processor 'microblaze_0' is selected.
+12:09:37 INFO  : System reset is completed.
+12:09:40 INFO  : 'after 3000' command is executed.
+12:09:40 INFO  : Context for processor 'microblaze_0' is selected.
+12:09:40 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+12:09:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+12:09:40 INFO  : Context for processor 'microblaze_0' is selected.
+12:09:40 INFO  : 'con' command is executed.
+12:09:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:09:40 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+12:12:53 INFO  : Disconnected from the channel tcfchan#4.
+12:12:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:12:54 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:12:54 INFO  : 'jtag frequency' command is executed.
+12:12:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:12:57 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+12:12:57 INFO  : Context for processor 'microblaze_0' is selected.
+12:12:57 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+12:12:57 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:12:57 INFO  : Context for processor 'microblaze_0' is selected.
+12:12:57 INFO  : System reset is completed.
+12:13:00 INFO  : 'after 3000' command is executed.
+12:13:00 INFO  : Context for processor 'microblaze_0' is selected.
+12:13:00 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+12:13:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+12:13:00 INFO  : Context for processor 'microblaze_0' is selected.
+12:13:00 INFO  : 'con' command is executed.
+12:13:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:13:00 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\systemdebugger_iic_mb_system_standalone.tcl'
+12:15:50 INFO  : Bit file 'C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit' is generated.
+12:15:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:15:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:15:53 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+12:16:16 INFO  : Disconnected from the channel tcfchan#5.
+12:16:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:16:17 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:16:17 INFO  : 'jtag frequency' command is executed.
+12:16:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:16:19 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+12:16:19 INFO  : Context for processor 'microblaze_0' is selected.
+12:16:19 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+12:16:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:16:19 INFO  : Context for processor 'microblaze_0' is selected.
+12:16:19 INFO  : System reset is completed.
+12:16:22 INFO  : 'after 3000' command is executed.
+12:16:22 INFO  : Context for processor 'microblaze_0' is selected.
+12:16:22 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+12:16:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+12:16:23 INFO  : Context for processor 'microblaze_0' is selected.
+12:16:23 INFO  : 'con' command is executed.
+12:16:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:16:23 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\systemdebugger_iic_mb_system_standalone.tcl'
+12:17:01 INFO  : Disconnected from the channel tcfchan#6.
+12:17:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:17:02 INFO  : Jtag cable 'Digilent Arty A7-100T 210319BD75AAA' is selected.
+12:17:02 INFO  : 'jtag frequency' command is executed.
+12:17:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}' command is executed.
+12:17:05 INFO  : Device configured successfully with "C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit"
+12:17:05 INFO  : Context for processor 'microblaze_0' is selected.
+12:17:05 INFO  : Hardware design and registers information is loaded from 'C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa'.
+12:17:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:17:05 INFO  : Context for processor 'microblaze_0' is selected.
+12:17:05 INFO  : System reset is completed.
+12:17:08 INFO  : 'after 3000' command is executed.
+12:17:08 INFO  : Context for processor 'microblaze_0' is selected.
+12:17:08 INFO  : The application 'C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf' is downloaded to processor 'microblaze_0'.
+12:17:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BD75AAA" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BD75AAA-13631093-0"}
+fpga -file C:/Parvathy/vitis_microb_i2c/iic_mb/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Parvathy/vitis_microb_i2c/IIC_eeprom/export/IIC_eeprom/hw/design_mb_i2c_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Parvathy/vitis_microb_i2c/iic_mb/Debug/iic_mb.elf
+----------------End of Script----------------
+
+12:17:08 INFO  : Context for processor 'microblaze_0' is selected.
+12:17:08 INFO  : 'con' command is executed.
+12:17:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:17:08 INFO  : Launch script is exported to file 'C:\Parvathy\vitis_microb_i2c\iic_mb_system\_ide\scripts\debugger_iic_mb-default.tcl'
+12:21:22 INFO  : Disconnected from the channel tcfchan#7.
+10:37:35 DEBUG : Logs will be stored at 'C:/Parvathy/vitis_microb_i2c/IDE.log'.
+10:37:36 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Parvathy\vitis_microb_i2c\temp_xsdb_launch_script.tcl
+10:37:43 INFO  : XSCT server has started successfully.
+10:37:43 INFO  : Platform repository initialization has completed.
+10:37:43 INFO  : Registering command handlers for Vitis TCF services
+10:37:44 INFO  : Successfully done setting XSCT server connection channel  
+10:37:44 INFO  : plnx-install-location is set to ''
+10:37:44 INFO  : Successfully done query RDI_DATADIR 
+10:37:44 INFO  : Successfully done setting workspace for the tool. 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="MICROBLAZE_IIC_system-bitFile" value="${project_loc:MICROBLAZE_IIC}/_ide/bitstream/design_i2c_wrapper.bit"/>
+	<item key="MICROBLAZE_IIC_system-bmmFile" value="${project_loc:MICROBLAZE_IIC}/_ide/bitstream/design_i2c_wrapper.mmi"/>
+	<item key="MICROBLAZE_IIC_system-target" value="Local"/>
+	<item key="MICROBLAZE_IIC_system-device" value="Auto Detect"/>
+	<item key="MICROBLAZE_IIC_system-partial_bit" value="false"/>
+	<item key="MICROBLAZE_IIC_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="MICROBLAZE_IIC_system"/>
+	<item key="MICROBLAZE_IIC_system-microblaze_0-initElf" value="bootloop"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Arty A7-100T 210319BD75AAA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Arty A7-100T-210319BD75AAA-13631093-0&quot;}}]}"/>
+</section>

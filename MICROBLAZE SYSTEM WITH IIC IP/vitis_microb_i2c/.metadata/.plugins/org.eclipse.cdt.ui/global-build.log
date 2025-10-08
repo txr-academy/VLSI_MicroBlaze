@@ -1,0 +1,8 @@
+Nothing to build in platform 'IIC_eeprom'
+
+12:05:45 **** Incremental Build of configuration Debug for project iic_mb ****
+make all 
+make: Nothing to be done for 'all'.
+12:05:46 **** Build of configuration Debug for project iic_mb_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

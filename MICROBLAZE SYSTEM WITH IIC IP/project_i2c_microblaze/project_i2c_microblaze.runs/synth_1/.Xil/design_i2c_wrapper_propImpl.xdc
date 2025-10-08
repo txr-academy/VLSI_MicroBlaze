@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:C:/Parvathy/project_i2c_microblaze/project_i2c_microblaze.srcs/constrs_1/new/i2cio.xdc rfile:../../../project_i2c_microblaze.srcs/constrs_1/new/i2cio.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E16 [get_ports {scl_0}]
+set_property src_info {type:XDC file:1 line:15 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E15 [get_ports {sda_0}]

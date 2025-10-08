@@ -1,0 +1,190 @@
+timestamp=[2025-09-22 11:41:20], mode=WORKBENCH_START, duration=0:00:10.010, duration_ms=10010, data={}
+timestamp=[2025-09-22 11:41:21], mode=WORKBENCH_UI_INIT, duration=0:00:00.788, duration_ms=788, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2025-09-22 11:41:22], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.303, duration_ms=303, data={}
+timestamp=[2025-09-22 11:43:58], mode=PLATFORM_CREATION, duration=0:00:02.185, duration_ms=2185, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2025-09-22 11:44:35], mode=APP_CREATION, duration=0:00:01.790, duration_ms=1790, data={name=IIC_MICROBLAZE, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=IIC_SYSTEM, application_type=application}
+timestamp=[2025-09-22 11:45:07], mode=PLATFORM_GENERATION, duration=0:00:02.810, duration_ms=2810, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 11:45:16], mode=PLATFORM_GENERATION, duration=0:00:07.997, duration_ms=7997, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 11:45:20], mode=BUILD, duration=0:00:03.781, duration_ms=3781, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 11:45:21], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 12:24:41], mode=PLATFORM_GENERATION, duration=0:00:04.066, duration_ms=4066, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 12:24:42], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-22 12:24:42], mode=BUILD, duration=0:00:00.360, duration_ms=360, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-22 12:24:51], mode=PLATFORM_GENERATION, duration=0:00:08.900, duration_ms=8900, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 12:24:53], mode=BUILD, duration=0:00:01.314, duration_ms=1314, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 12:24:54], mode=BUILD, duration=0:00:00.238, duration_ms=238, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 12:27:51], mode=PLATFORM_GENERATION, duration=0:00:02.845, duration_ms=2845, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 12:27:52], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-22 12:27:52], mode=BUILD, duration=0:00:00.233, duration_ms=233, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-22 12:28:04], mode=PLATFORM_GENERATION, duration=0:00:07.712, duration_ms=7712, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 12:28:06], mode=BUILD, duration=0:00:01.317, duration_ms=1317, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 12:28:07], mode=BUILD, duration=0:00:00.376, duration_ms=376, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 12:40:35], mode=PLATFORM_GENERATION, duration=0:00:02.911, duration_ms=2911, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 12:40:35], mode=BUILD, duration=0:00:00.250, duration_ms=250, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-22 12:40:36], mode=BUILD, duration=0:00:00.246, duration_ms=246, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-22 12:40:51], mode=PLATFORM_GENERATION, duration=0:00:07.484, duration_ms=7484, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 12:40:53], mode=BUILD, duration=0:00:01.366, duration_ms=1366, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 12:40:54], mode=BUILD, duration=0:00:00.236, duration_ms=236, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 12:50:19], mode=PLATFORM_GENERATION, duration=0:00:02.950, duration_ms=2950, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 12:50:20], mode=BUILD, duration=0:00:00.260, duration_ms=260, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-22 12:50:20], mode=BUILD, duration=0:00:00.217, duration_ms=217, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-22 12:50:32], mode=PLATFORM_GENERATION, duration=0:00:07.740, duration_ms=7740, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 12:50:33], mode=BUILD, duration=0:00:01.305, duration_ms=1305, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 12:50:34], mode=BUILD, duration=0:00:00.183, duration_ms=183, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 12:55:30], mode=PLATFORM_GENERATION, duration=0:00:02.948, duration_ms=2948, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 12:55:30], mode=BUILD, duration=0:00:00.215, duration_ms=215, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-22 12:55:30], mode=BUILD, duration=0:00:00.230, duration_ms=230, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-22 12:55:44], mode=PLATFORM_GENERATION, duration=0:00:07.585, duration_ms=7585, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 12:55:45], mode=BUILD, duration=0:00:01.329, duration_ms=1329, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 12:55:46], mode=BUILD, duration=0:00:00.169, duration_ms=169, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 13:01:02], mode=PLATFORM_GENERATION, duration=0:00:02.820, duration_ms=2820, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 13:01:02], mode=BUILD, duration=0:00:00.231, duration_ms=231, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-22 13:01:02], mode=BUILD, duration=0:00:00.254, duration_ms=254, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-22 13:01:14], mode=PLATFORM_GENERATION, duration=0:00:07.460, duration_ms=7460, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 13:01:15], mode=BUILD, duration=0:00:01.252, duration_ms=1252, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 13:01:16], mode=BUILD, duration=0:00:00.245, duration_ms=245, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 13:13:16], mode=PLATFORM_GENERATION, duration=0:00:02.720, duration_ms=2720, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 13:13:16], mode=BUILD, duration=0:00:00.202, duration_ms=202, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-22 13:13:17], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-22 13:13:33], mode=PLATFORM_GENERATION, duration=0:00:07.764, duration_ms=7764, data={name=IIC_SYSTEM}
+timestamp=[2025-09-22 13:13:35], mode=BUILD, duration=0:00:01.204, duration_ms=1204, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-22 13:13:35], mode=BUILD, duration=0:00:00.252, duration_ms=252, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 09:46:53], mode=WORKBENCH_START, duration=0:00:10.201, duration_ms=10201, data={}
+timestamp=[2025-09-23 09:46:54], mode=WORKBENCH_UI_INIT, duration=0:00:01.712, duration_ms=1712, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=IIC_MICROBLAZE,IIC_MICROBLAZE_system,IIC_SYSTEM,RemoteSystemsTempFiles}
+timestamp=[2025-09-23 09:46:55], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.180, duration_ms=180, data={}
+timestamp=[2025-09-23 10:12:48], mode=PLATFORM_GENERATION, duration=0:00:04.154, duration_ms=4154, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 10:12:48], mode=BUILD, duration=0:00:00.284, duration_ms=284, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 10:12:48], mode=BUILD, duration=0:00:00.269, duration_ms=269, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 10:13:38], mode=PLATFORM_GENERATION, duration=0:00:02.409, duration_ms=2409, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 10:13:39], mode=BUILD, duration=0:00:00.224, duration_ms=224, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 10:13:39], mode=BUILD, duration=0:00:00.280, duration_ms=280, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 10:13:51], mode=PLATFORM_GENERATION, duration=0:00:08.003, duration_ms=8003, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 10:13:52], mode=BUILD, duration=0:00:01.329, duration_ms=1329, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 10:13:53], mode=BUILD, duration=0:00:00.302, duration_ms=302, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 10:50:38], mode=PLATFORM_GENERATION, duration=0:00:03.203, duration_ms=3203, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 10:50:38], mode=BUILD, duration=0:00:00.250, duration_ms=250, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 10:50:39], mode=BUILD, duration=0:00:00.252, duration_ms=252, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 10:50:50], mode=PLATFORM_GENERATION, duration=0:00:06.906, duration_ms=6906, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 10:50:51], mode=BUILD, duration=0:00:01.190, duration_ms=1190, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 10:50:52], mode=BUILD, duration=0:00:00.323, duration_ms=323, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 10:54:27], mode=PLATFORM_GENERATION, duration=0:00:02.827, duration_ms=2827, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 10:54:27], mode=BUILD, duration=0:00:00.222, duration_ms=222, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 10:54:27], mode=BUILD, duration=0:00:00.247, duration_ms=247, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 10:54:39], mode=PLATFORM_GENERATION, duration=0:00:06.940, duration_ms=6940, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 10:54:40], mode=BUILD, duration=0:00:01.139, duration_ms=1139, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 10:54:41], mode=BUILD, duration=0:00:00.341, duration_ms=341, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 11:00:40], mode=PLATFORM_GENERATION, duration=0:00:02.741, duration_ms=2741, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 11:00:40], mode=BUILD, duration=0:00:00.226, duration_ms=226, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 11:00:40], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 11:00:53], mode=PLATFORM_GENERATION, duration=0:00:07.551, duration_ms=7551, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 11:00:55], mode=BUILD, duration=0:00:01.589, duration_ms=1589, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 11:00:56], mode=BUILD, duration=0:00:00.240, duration_ms=240, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 11:02:12], mode=PLATFORM_GENERATION, duration=0:00:02.764, duration_ms=2764, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 11:02:12], mode=BUILD, duration=0:00:00.207, duration_ms=207, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 11:02:12], mode=BUILD, duration=0:00:00.226, duration_ms=226, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 11:02:25], mode=PLATFORM_GENERATION, duration=0:00:06.663, duration_ms=6663, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 11:02:26], mode=BUILD, duration=0:00:01.222, duration_ms=1222, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 11:18:50], mode=PLATFORM_GENERATION, duration=0:00:02.762, duration_ms=2762, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 11:18:50], mode=BUILD, duration=0:00:00.259, duration_ms=259, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 11:18:50], mode=BUILD, duration=0:00:00.233, duration_ms=233, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 11:20:27], mode=PLATFORM_GENERATION, duration=0:00:08.340, duration_ms=8340, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 11:20:28], mode=BUILD, duration=0:00:01.259, duration_ms=1259, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 11:20:29], mode=BUILD, duration=0:00:00.221, duration_ms=221, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 11:21:22], mode=PLATFORM_GENERATION, duration=0:00:02.918, duration_ms=2918, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 11:21:23], mode=BUILD, duration=0:00:00.240, duration_ms=240, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 11:21:23], mode=BUILD, duration=0:00:00.238, duration_ms=238, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 11:21:52], mode=PLATFORM_GENERATION, duration=0:00:07.151, duration_ms=7151, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 11:21:53], mode=BUILD, duration=0:00:01.162, duration_ms=1162, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 12:14:55], mode=PLATFORM_GENERATION, duration=0:00:03.221, duration_ms=3221, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 12:14:55], mode=BUILD, duration=0:00:00.276, duration_ms=276, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 12:14:55], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 12:15:11], mode=PLATFORM_GENERATION, duration=0:00:08.659, duration_ms=8659, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 12:15:12], mode=BUILD, duration=0:00:01.353, duration_ms=1353, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 12:19:13], mode=PLATFORM_GENERATION, duration=0:00:03.052, duration_ms=3052, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 12:19:13], mode=BUILD, duration=0:00:00.248, duration_ms=248, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 12:19:13], mode=BUILD, duration=0:00:00.286, duration_ms=286, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 12:19:24], mode=PLATFORM_GENERATION, duration=0:00:08.479, duration_ms=8479, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 12:19:25], mode=BUILD, duration=0:00:01.249, duration_ms=1249, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 12:19:26], mode=BUILD, duration=0:00:00.303, duration_ms=303, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 12:23:41], mode=PLATFORM_GENERATION, duration=0:00:02.969, duration_ms=2969, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 12:23:41], mode=BUILD, duration=0:00:00.208, duration_ms=208, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 12:23:41], mode=BUILD, duration=0:00:00.316, duration_ms=316, data={name=IIC_MICROBLAZE_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 12:23:51], mode=PLATFORM_GENERATION, duration=0:00:07.769, duration_ms=7769, data={name=IIC_SYSTEM}
+timestamp=[2025-09-23 12:23:52], mode=BUILD, duration=0:00:01.221, duration_ms=1221, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 12:27:19], mode=BUILD, duration=0:00:00.988, duration_ms=988, data={name=IIC_MICROBLAZE, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 13:02:47], mode=PLATFORM_CREATION, duration=0:00:01.619, duration_ms=1619, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2025-09-23 13:03:02], mode=PLATFORM_GENERATION, duration=0:00:02.924, duration_ms=2924, data={name=IIC_eeprom}
+timestamp=[2025-09-23 13:03:13], mode=PLATFORM_GENERATION, duration=0:00:09.147, duration_ms=9147, data={name=IIC_eeprom}
+timestamp=[2025-09-23 13:04:36], mode=APP_CREATION, duration=0:00:01.051, duration_ms=1051, data={name=iic_mb, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=IIC_eeprom, application_type=application}
+timestamp=[2025-09-23 13:05:04], mode=BUILD, duration=0:00:02.786, duration_ms=2786, data={name=iic_mb, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 13:05:04], mode=BUILD, duration=0:00:00.159, duration_ms=159, data={name=iic_mb_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 13:09:42], mode=PLATFORM_GENERATION, duration=0:00:03.133, duration_ms=3133, data={name=IIC_eeprom}
+timestamp=[2025-09-23 13:09:43], mode=BUILD, duration=0:00:00.225, duration_ms=225, data={name=iic_mb, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 13:09:43], mode=BUILD, duration=0:00:00.329, duration_ms=329, data={name=iic_mb_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 13:09:54], mode=PLATFORM_GENERATION, duration=0:00:07.081, duration_ms=7081, data={name=IIC_eeprom}
+timestamp=[2025-09-23 13:09:55], mode=BUILD, duration=0:00:01.194, duration_ms=1194, data={name=iic_mb, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 13:09:56], mode=BUILD, duration=0:00:00.370, duration_ms=370, data={name=iic_mb_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 13:16:05], mode=PLATFORM_GENERATION, duration=0:00:02.719, duration_ms=2719, data={name=IIC_eeprom}
+timestamp=[2025-09-23 13:16:05], mode=BUILD, duration=0:00:00.204, duration_ms=204, data={name=iic_mb, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 13:16:05], mode=BUILD, duration=0:00:00.333, duration_ms=333, data={name=iic_mb_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 13:16:17], mode=PLATFORM_GENERATION, duration=0:00:07.749, duration_ms=7749, data={name=IIC_eeprom}
+timestamp=[2025-09-23 13:16:18], mode=BUILD, duration=0:00:01.313, duration_ms=1313, data={name=iic_mb, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 13:17:41], mode=BUILD, duration=0:00:01.016, duration_ms=1016, data={name=iic_mb, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 13:22:38], mode=PLATFORM_GENERATION, duration=0:00:02.976, duration_ms=2976, data={name=IIC_eeprom}
+timestamp=[2025-09-23 13:22:38], mode=BUILD, duration=0:00:00.232, duration_ms=232, data={name=iic_mb, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 13:22:38], mode=BUILD, duration=0:00:00.312, duration_ms=312, data={name=iic_mb_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 13:22:47], mode=PLATFORM_GENERATION, duration=0:00:07.425, duration_ms=7425, data={name=IIC_eeprom}
+timestamp=[2025-09-23 13:22:47], mode=BUILD, duration=0:00:00.336, duration_ms=336, data={name=iic_mb, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 13:26:06], mode=PLATFORM_GENERATION, duration=0:00:02.826, duration_ms=2826, data={name=IIC_eeprom}
+timestamp=[2025-09-23 13:26:06], mode=BUILD, duration=0:00:00.216, duration_ms=216, data={name=iic_mb, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 13:26:06], mode=BUILD, duration=0:00:00.238, duration_ms=238, data={name=iic_mb_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-23 13:26:19], mode=PLATFORM_GENERATION, duration=0:00:07.143, duration_ms=7143, data={name=IIC_eeprom}
+timestamp=[2025-09-23 13:26:20], mode=BUILD, duration=0:00:01.274, duration_ms=1274, data={name=iic_mb, configuration=Debug, clean_build=false}
+timestamp=[2025-09-24 09:50:32], mode=WORKBENCH_START, duration=0:00:10.139, duration_ms=10139, data={}
+timestamp=[2025-09-24 09:50:33], mode=WORKBENCH_UI_INIT, duration=0:00:01.538, duration_ms=1538, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=IIC_eeprom,RemoteSystemsTempFiles,iic_mb,iic_mb_system}
+timestamp=[2025-09-24 09:50:34], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.207, duration_ms=207, data={}
+timestamp=[2025-09-24 10:03:16], mode=PLATFORM_GENERATION, duration=0:00:03.683, duration_ms=3683, data={name=IIC_eeprom}
+timestamp=[2025-09-24 10:03:16], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=iic_mb, configuration=Debug, clean_build=true}
+timestamp=[2025-09-24 10:03:16], mode=BUILD, duration=0:00:00.301, duration_ms=301, data={name=iic_mb_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-24 10:04:41], mode=PLATFORM_GENERATION, duration=0:00:07.687, duration_ms=7687, data={name=IIC_eeprom}
+timestamp=[2025-09-24 10:06:22], mode=PLATFORM_GENERATION, duration=0:00:02.741, duration_ms=2741, data={name=IIC_eeprom}
+timestamp=[2025-09-24 10:06:22], mode=BUILD, duration=0:00:00.255, duration_ms=255, data={name=iic_mb, configuration=Debug, clean_build=true}
+timestamp=[2025-09-24 10:06:23], mode=BUILD, duration=0:00:00.242, duration_ms=242, data={name=iic_mb_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-24 10:06:37], mode=PLATFORM_GENERATION, duration=0:00:07.055, duration_ms=7055, data={name=IIC_eeprom}
+timestamp=[2025-09-24 10:06:38], mode=BUILD, duration=0:00:01.290, duration_ms=1290, data={name=iic_mb, configuration=Debug, clean_build=false}
+timestamp=[2025-09-24 10:25:24], mode=PLATFORM_GENERATION, duration=0:00:03.375, duration_ms=3375, data={name=IIC_eeprom}
+timestamp=[2025-09-24 10:25:25], mode=BUILD, duration=0:00:00.217, duration_ms=217, data={name=iic_mb, configuration=Debug, clean_build=true}
+timestamp=[2025-09-24 10:25:25], mode=BUILD, duration=0:00:00.323, duration_ms=323, data={name=iic_mb_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-24 10:25:34], mode=PLATFORM_GENERATION, duration=0:00:08.357, duration_ms=8357, data={name=IIC_eeprom}
+timestamp=[2025-09-24 10:25:36], mode=BUILD, duration=0:00:01.382, duration_ms=1382, data={name=iic_mb, configuration=Debug, clean_build=false}
+timestamp=[2025-09-24 10:32:08], mode=PLATFORM_GENERATION, duration=0:00:02.863, duration_ms=2863, data={name=IIC_eeprom}
+timestamp=[2025-09-24 10:32:08], mode=BUILD, duration=0:00:00.224, duration_ms=224, data={name=iic_mb, configuration=Debug, clean_build=true}
+timestamp=[2025-09-24 10:32:20], mode=PLATFORM_GENERATION, duration=0:00:07.858, duration_ms=7858, data={name=IIC_eeprom}
+timestamp=[2025-09-24 10:32:22], mode=BUILD, duration=0:00:01.982, duration_ms=1982, data={name=iic_mb, configuration=Debug, clean_build=false}
+timestamp=[2025-09-24 10:37:58], mode=PLATFORM_GENERATION, duration=0:00:02.842, duration_ms=2842, data={name=IIC_eeprom}
+timestamp=[2025-09-24 10:37:58], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=iic_mb, configuration=Debug, clean_build=true}
+timestamp=[2025-09-24 10:38:08], mode=PLATFORM_GENERATION, duration=0:00:07.650, duration_ms=7650, data={name=IIC_eeprom}
+timestamp=[2025-09-24 10:38:09], mode=BUILD, duration=0:00:01.291, duration_ms=1291, data={name=iic_mb, configuration=Debug, clean_build=false}
+timestamp=[2025-09-24 10:44:22], mode=PLATFORM_GENERATION, duration=0:00:02.660, duration_ms=2660, data={name=IIC_eeprom}
+timestamp=[2025-09-24 10:44:23], mode=BUILD, duration=0:00:00.208, duration_ms=208, data={name=iic_mb, configuration=Debug, clean_build=true}
+timestamp=[2025-09-24 10:44:36], mode=PLATFORM_GENERATION, duration=0:00:08.041, duration_ms=8041, data={name=IIC_eeprom}
+timestamp=[2025-09-24 10:44:37], mode=BUILD, duration=0:00:01.314, duration_ms=1314, data={name=iic_mb, configuration=Debug, clean_build=false}
+timestamp=[2025-09-24 10:50:10], mode=BUILD, duration=0:00:00.303, duration_ms=303, data={name=iic_mb, configuration=Debug, clean_build=false}
+timestamp=[2025-09-24 11:20:41], mode=WORKBENCH_START, duration=0:00:09.132, duration_ms=9132, data={}
+timestamp=[2025-09-24 11:20:42], mode=WORKBENCH_UI_INIT, duration=0:00:01.100, duration_ms=1100, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=IIC_eeprom,RemoteSystemsTempFiles,iic_mb,iic_mb_system}
+timestamp=[2025-09-24 11:20:43], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.156, duration_ms=156, data={}
+timestamp=[2025-09-24 11:21:00], mode=PLATFORM_GENERATION, duration=0:00:04.496, duration_ms=4496, data={name=IIC_eeprom}
+timestamp=[2025-09-24 11:21:01], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=iic_mb, configuration=Debug, clean_build=true}
+timestamp=[2025-09-24 11:21:01], mode=BUILD, duration=0:00:00.258, duration_ms=258, data={name=iic_mb_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-24 11:21:15], mode=PLATFORM_GENERATION, duration=0:00:03.063, duration_ms=3063, data={name=IIC_eeprom}
+timestamp=[2025-09-24 11:21:15], mode=BUILD, duration=0:00:00.226, duration_ms=226, data={name=iic_mb, configuration=Debug, clean_build=true}
+timestamp=[2025-09-24 11:21:30], mode=PLATFORM_GENERATION, duration=0:00:08.621, duration_ms=8621, data={name=IIC_eeprom}
+timestamp=[2025-09-24 11:21:32], mode=BUILD, duration=0:00:01.598, duration_ms=1598, data={name=iic_mb, configuration=Debug, clean_build=false}
+timestamp=[2025-09-24 12:03:00], mode=WORKBENCH_START, duration=0:00:08.424, duration_ms=8424, data={}
+timestamp=[2025-09-24 12:03:01], mode=WORKBENCH_UI_INIT, duration=0:00:01.407, duration_ms=1407, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=IIC_eeprom,RemoteSystemsTempFiles,iic_mb,iic_mb_system}
+timestamp=[2025-09-24 12:03:02], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.176, duration_ms=176, data={}
+timestamp=[2025-09-24 12:05:45], mode=BUILD, duration=0:00:00.222, duration_ms=222, data={name=iic_mb, configuration=Debug, clean_build=false}
+timestamp=[2025-09-24 12:05:46], mode=BUILD, duration=0:00:00.254, duration_ms=254, data={name=iic_mb_system, configuration=Debug, clean_build=false}
+timestamp=[2025-10-07 10:37:41], mode=WORKBENCH_START, duration=0:00:22.995, duration_ms=22995, data={}
+timestamp=[2025-10-07 10:37:42], mode=WORKBENCH_UI_INIT, duration=0:00:01.145, duration_ms=1145, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=IIC_eeprom,RemoteSystemsTempFiles,iic_mb,iic_mb_system}
+timestamp=[2025-10-07 10:37:43], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.202, duration_ms=202, data={}

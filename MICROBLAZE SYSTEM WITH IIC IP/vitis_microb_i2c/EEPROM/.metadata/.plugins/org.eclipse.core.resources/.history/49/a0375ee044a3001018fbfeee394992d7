@@ -1,0 +1,40 @@
+#include "xparameters.h"
+#include "xiic.h"
+#include "xil_printf.h"
+#include "sleep.h"
+
+#define IIC_DEVICE_ID XPAR_AXI_IIC_0_DEVICE_ID
+
+XIic IicInstance;
+
+int main() {
+    int status;
+    xil_printf("Starting I2C Bus Scanner...\r\n");
+
+    status = XIic_Initialize(&IicInstance, IIC_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("I2C initialization FAILED!\r\n");
+        return XST_FAILURE;
+    }
+    xil_printf("I2C initialization SUCCESS.\r\n");
+
+    XIic_Start(&IicInstance);
+    XIic_IntrGlobalDisable(&IicInstance);
+
+    for (int addr = 1; addr < 0x80; addr++) {  // 7-bit addresses excluding 0
+        // Send a zero-length write with stop to "ping" device
+        status = XIic_Send(IicInstance.BaseAddress, addr, NULL, 0, XIIC_STOP);
+
+        if (status >= 0) {
+            xil_printf("Address 0x%02X: ACK (device found)\r\n", addr);
+        } else {
+            xil_printf("Address 0x%02X: NO RESPONSE\r\n", addr);
+        }
+        usleep(500);  // short delay between addresses
+    }
+
+    XIic_Stop(&IicInstance);
+    xil_printf("I2C scan completed.\r\n");
+
+    return 0;
+}

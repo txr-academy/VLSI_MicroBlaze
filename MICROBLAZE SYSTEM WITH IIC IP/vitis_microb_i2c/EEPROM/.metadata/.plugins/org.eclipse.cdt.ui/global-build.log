@@ -1,0 +1,5 @@
+Nothing to build in platform 'IIC_EEPROM'
+
+12:59:40 **** Incremental Build of configuration Debug for project MICROBLAZE_IIC ****
+make all 
+make: Nothing to be done for 'all'.

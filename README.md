@@ -57,7 +57,6 @@ THE Vivado project utilizes various IPs in the vivado to create a custom core an
 Note : In case of running program of vitis shows xparameter missing error use helloworld template for writing application code in vitis rather than selecting empty application
 
 
-[project_MB_spec](Custom Microblaze/project_MB_spec/Microblaze_spec.pdf)
 
 
 

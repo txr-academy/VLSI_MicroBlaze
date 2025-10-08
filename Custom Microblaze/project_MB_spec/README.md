@@ -34,7 +34,7 @@ Supports full-duplex serial communication with programmable clock speed.
 
 
 
-
+[project_MB_spec](https://github.com/txr-academy/VLSI_MicroBlaze/blob/49032ead8fa6e1e19f995605fcc3399beed3bb48/Custom%20Microblaze/project_MB_spec/Microblaze_spec.pdf)
 
 
 

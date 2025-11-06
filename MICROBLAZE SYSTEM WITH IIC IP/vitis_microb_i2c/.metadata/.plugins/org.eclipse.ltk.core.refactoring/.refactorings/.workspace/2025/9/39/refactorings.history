@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;IIC_SYSTEM&apos;" deleteContents="true" description="Delete resource &apos;IIC_SYSTEM&apos;" element1="/IIC_SYSTEM" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1758612658739"/>&#x0A;<refactoring comment="Delete resource &apos;IIC_MICROBLAZE_system&apos;" deleteContents="true" description="Delete resource &apos;IIC_MICROBLAZE_system&apos;" element1="/IIC_MICROBLAZE_system" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1758612850640"/>
+</session>

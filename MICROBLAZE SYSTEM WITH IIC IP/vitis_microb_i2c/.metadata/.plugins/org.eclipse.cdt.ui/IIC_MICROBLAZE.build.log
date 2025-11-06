@@ -1,0 +1,41 @@
+12:27:18 **** Incremental Build of configuration Debug for project IIC_MICROBLAZE ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/sw/IIC_SYSTEM/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/sw/IIC_SYSTEM/standalone_domain/bspinclude/include/xiic.h:302,
+                 from ../src/helloworld.c:2:
+../src/helloworld.c: In function 'main':
+C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/sw/IIC_SYSTEM/standalone_domain/bspinclude/include/xiic_l.h:277:34: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+  277 |         XIic_Out32((BaseAddress) + (RegOffset), (RegisterValue))
+      |                    ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+      |                                  |
+      |                                  XIic *
+C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/sw/IIC_SYSTEM/standalone_domain/bspinclude/include/xiic_l.h:294:9: note: in expansion of macro 'XIic_WriteReg'
+  294 |         XIic_WriteReg((BaseAddress), XIIC_DGIER_OFFSET, 0)
+      |         ^~~~~~~~~~~~~
+../src/helloworld.c:29:5: note: in expansion of macro 'XIic_IntrGlobalDisable'
+   29 |     XIic_IntrGlobalDisable(&IicInstance);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/sw/IIC_SYSTEM/standalone_domain/bspinclude/include/xiic_l.h:75,
+                 from C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/sw/IIC_SYSTEM/standalone_domain/bspinclude/include/xiic.h:302,
+                 from ../src/helloworld.c:2:
+C:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/sw/IIC_SYSTEM/standalone_domain/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'XIic *'
+  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: IIC_MICROBLAZE.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Parvathy/vitis_microb_i2c/IIC_SYSTEM/export/IIC_SYSTEM/sw/IIC_SYSTEM/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IIC_MICROBLAZE.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: IIC_MICROBLAZE.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IIC_MICROBLAZE.elf  |tee "IIC_MICROBLAZE.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9564	    412	   3216	  13192	   3388	IIC_MICROBLAZE.elf
+'Finished building: IIC_MICROBLAZE.elf.size'
+' '
+
+12:27:19 Build Finished (took 984ms)
+

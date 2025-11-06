@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:C:/Parvathy/project_MB_spec/project_MB_spec.srcs/constrs_1/new/uart1.xdc rfile:../../../project_MB_spec.srcs/constrs_1/new/uart1.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G13 [get_ports {tx_0}]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN B11 [get_ports {rx_0}]

@@ -1,0 +1,99 @@
+#include "xparameters.h"
+#include "xiic.h"
+#include "xil_printf.h"
+#include "sleep.h"
+
+#define IIC_DEVICE_ID    XPAR_IIC_0_DEVICE_ID
+#define EEPROM_ADDRESS   0x50      // Common EEPROM I2C 7-bit address
+#define TEST_MEM_ADDRESS 0x0000    // EEPROM memory test address
+#define TEST_DATA_BYTE   0x5A      // Test data byte to write and read
+
+XIic IicInstance;
+int I2C_Write_Byte(u16 mem_addr, u8 data) {
+    u8 write_buffer[3];
+    int bytes_sent;
+
+    write_buffer[0] = (mem_addr >> 8) & 0xFF;
+    write_buffer[1] = mem_addr & 0xFF;
+    write_buffer[2] = data;
+
+    bytes_sent = XIic_Send(XPAR_IIC_0_BASEADDR, EEPROM_ADDRESS, write_buffer, 3, XIIC_STOP);
+    xil_printf("XIic_Send wrote %d bytes\n", bytes_sent);
+    if (bytes_sent != 3) {
+        xil_printf("Write failed or incomplete\n");
+        return XST_FAILURE;
+    }
+    return XST_SUCCESS;
+}
+
+
+
+int I2C_Read_Byte(u16 mem_addr, u8 *data) {
+    u8 addr_buffer[2];
+    int bytes_sent;
+    int bytes_received;
+
+    addr_buffer[0] = (mem_addr >> 8) & 0xFF; // Address MSB
+    addr_buffer[1] = mem_addr & 0xFF;        // Address LSB
+
+    // Set EEPROM internal address pointer with repeated start
+    bytes_sent = XIic_Send(XPAR_IIC_0_BASEADDR, EEPROM_ADDRESS, addr_buffer, 2, XIIC_REPEATED_START);
+    xil_printf("XIic_Send address bytes sent: %d\n", bytes_sent);
+    if (bytes_sent != 2) {
+        xil_printf("Error: Failed to send address bytes for read\n");
+        return XST_FAILURE;
+    }
+
+    // Receive one byte of data from EEPROM
+    bytes_received = XIic_Recv(XPAR_IIC_0_BASEADDR, EEPROM_ADDRESS, data, 1, XIIC_STOP);
+    xil_printf("XIic_Recv bytes received: %d\n", bytes_received);
+    if (bytes_received != 1) {
+        xil_printf("Error: Failed to receive data from EEPROM\n");
+        return XST_FAILURE;
+    }
+    return XST_SUCCESS;
+}
+
+int main() {
+    int status;
+    u8 read_data;
+
+    xil_printf("Starting EEPROM Test...\n");
+
+    // Initialize XIic device
+    status = XIic_Initialize(&IicInstance, IIC_DEVICE_ID);
+    xil_printf("XIic_Initialize returned %d\n", status);
+    if (status != XST_SUCCESS) {
+        xil_printf("Error: XIic initialization failed\n");
+        return -1;
+    }
+
+    // Write test byte to EEPROM
+    xil_printf("Writing 0x%02X to EEPROM address 0x%04X\n", TEST_DATA_BYTE, TEST_MEM_ADDRESS);
+    status = I2C_Write_Byte(TEST_MEM_ADDRESS, TEST_DATA_BYTE);
+    if (status != XST_SUCCESS) {
+        xil_printf("EEPROM write operation failed\n");
+        return -1;
+    }
+
+    // EEPROM write cycle time delay (typically 5-10 ms)
+    usleep(5000);
+
+    // Read back byte from EEPROM
+    xil_printf("Reading byte back from EEPROM address 0x%04X\n", TEST_MEM_ADDRESS);
+    status = I2C_Read_Byte(TEST_MEM_ADDRESS, &read_data);
+    if (status != XST_SUCCESS) {
+        xil_printf("EEPROM read operation failed\n");
+        return -1;
+    }
+
+    xil_printf("Read value: 0x%02X\n", read_data);
+
+    if (read_data == TEST_DATA_BYTE) {
+        xil_printf("EEPROM Test PASSED\n");
+    } else {
+        xil_printf("EEPROM Test FAILED\n");
+    }
+
+    return 0;
+}
